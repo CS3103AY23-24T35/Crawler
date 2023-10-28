@@ -122,6 +122,13 @@ def beautify(dic):
     return f"{city}, {country}, {ipv4}"
 
 if __name__ == '__main__':
+    # Stores the adblock as a set
+    url = "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/hosts.txt" # You can choose the adblock filter in txt format
+    save_path = "exclusion.txt"  # Replace with your desired file path
+    adblocker = initialise_adblock(url,save_path)
+    global exclusion=set() # I think this should be a global var so muli threading crawler can read?
+
+    
     manager = multiprocessing.Manager()
     url_queue = manager.Queue()
     # Create a queue for URLs
