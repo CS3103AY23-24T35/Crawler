@@ -1,4 +1,6 @@
 import requests
+import json
+import http
 import queue
 import threading
 import multiprocessing
@@ -23,12 +25,13 @@ def process_url(url, url_queue):
                 for new_url in new_urls:
                     url_queue.put(new_url)
 
+            url_geolocation = f"{url}, {request(url)}"
             # Write the processed URL to the output file
             with open(output_file, 'a') as f:
-                f.write(f"{url}\n")
+                f.write(f"{url_geolocation}\n")
 
             # Process the response as needed
-            print(f"Processed URL: {url}")
+            print(f"Processed URL: {url_geolocation}")
             print(f"{multiprocessing.current_process().name}")
             #print(page_content)
         else:
@@ -56,6 +59,36 @@ def worker(url_queue):
     while not url_queue.empty():
         url = url_queue.get()
         process_url(url, url_queue)
+
+# Reverse IP request
+# Takes in an URL or address.
+
+def request(addr):
+    try:
+        # Get from geolocation-db database
+        request_url = 'https://geolocation-db.com/jsonp/' + addr
+        response = requests.get(request_url)
+        result = response.content.decode()
+        result = result.split("(")[1].strip(")")
+        result  = json.loads(result)
+        ans = beautify(result)
+    except http.client.RemoteDisconnected as e:
+        print("Oh no, remote issues.")
+        ans = ""
+    except Exception as e:
+        print(e)
+        print("Some other issue")
+        ans = ""
+    return ans
+    
+# Helper function to beautify JSON response.
+# Takes in a dictionary as formatted via JSON, and outputs a string containing
+# the city of origin, country of origin, and IPv4 address.
+def beautify(dic):
+    city = dic.get("city", "Unknown City")
+    country = dic.get("country_name", "Unknown Country")
+    ipv4 = dic.get("IPv4", "Unknown IP")
+    return f"{city}, {country}, {ipv4}"
 
 if __name__ == '__main__':
     manager = multiprocessing.Manager()
