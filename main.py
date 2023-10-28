@@ -1,6 +1,7 @@
 import requests
 import json
 import http
+import socket
 import queue
 import threading
 import multiprocessing
@@ -64,6 +65,10 @@ def worker(url_queue):
 # Takes in an URL or address.
 
 def request(addr):
+    if "http" in addr:
+        host = addr.split("/")[2]
+        ip_address = socket.gethostbyname(host)
+        addr = ip_address
     try:
         # Get from geolocation-db database
         request_url = 'https://geolocation-db.com/jsonp/' + addr
