@@ -27,12 +27,12 @@ def initialise_adblock(url, save_path):
 def continue_crawl(url):
     # Check if the URL is in the exclusion list (ad block list)
     if url not in exclusion: # Checks if been to the site before
+        exclusion.add(url)
         domain=urlparse(url).netloc
         domain = domain.replace("www.","")
         #print(domain)
         if domain not in adblocker: # Checks domain if its an adblocker
             print("Continue crawling!")
-            exclusion.add(url)
             #print(exclusion)
             return True
     print("Don't crawl")
@@ -42,7 +42,9 @@ def continue_crawl(url):
 # Function to send a request and process URLs in the response
 def process_url(url, url_queue):
     try:
+        start = time.perf_counter()
         response = requests.get(url)
+        request_time = time.perf_counter() - start
         if response.status_code == 200:
             # Process the response and extract URLs
             page_content = response.text
@@ -57,7 +59,7 @@ def process_url(url, url_queue):
                     else:
                         continue
                         
-            url_geolocation = f"{url}, {request(url)}"
+            url_geolocation = f"{url}, {request(url)}, {request_time:.5f}"
             # Write the processed URL to the output file
             with open(output_file, 'a') as f:
                 f.write(f"{url_geolocation}\n")
