@@ -6,9 +6,37 @@ import threading
 import multiprocessing
 from bs4 import BeautifulSoup
 import time
+from urllib.parse import urlparse
 
 output_file = 'urls.txt'
 lock = multiprocessing.Lock()
+
+# Ensures most updated adblock list
+def initialise_adblock(url, save_path):
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open(save_path, 'wb') as file:
+            file.write(response.content)
+            print(f"Adblock list saved at {save_path}")
+        with open(save_path, 'r') as file:
+            return set({line.strip().partition(' ')[-1] for line in file})
+    else:
+        print(f"Error: Unable to download adblock list from {url}")
+
+def continue_crawl(url):
+    # Check if the URL is in the exclusion list (ad block list)
+    if url not in exclusion: # Checks if been to the site before
+        domain=urlparse(url).netloc
+        domain = domain.replace("www.","")
+        #print(domain)
+        if domain not in adblocker: # Checks domain if its an adblocker
+            print("Continue crawling!")
+            exclusion.add(url)
+            #print(exclusion)
+            return True
+    print("Don't crawl")
+    return False
+
 
 # Function to send a request and process URLs in the response
 def process_url(url, url_queue):
@@ -23,8 +51,11 @@ def process_url(url, url_queue):
             # Append the newly discovered URLs back to the queue
             with lock:
                 for new_url in new_urls:
-                    url_queue.put(new_url)
-
+                    if continue_crawl(new_url):
+                        url_queue.put(new_url)
+                    else:
+                        continue
+                        
             url_geolocation = f"{url}, {request(url)}"
             # Write the processed URL to the output file
             with open(output_file, 'a') as f:
