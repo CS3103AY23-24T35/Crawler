@@ -1,62 +1,223 @@
-https://mit.edu
-https://example.com
-http://news.mit.edu/
-http://news.mit.edu/
-http://news.mit.edu/2023/desiree-plata-sustainability-engineering-1024
-http://news.mit.edu/topic/sustainability
-http://news.mit.edu/2023/desiree-plata-sustainability-engineering-1024
-https://cee.mit.edu/people_individual/desiree-plata/
-https://twitter.com/share?url=http://web.mit.edu/spotlight/sustainability-start
-https://news.mit.edu/2023/an-enduring-bond-mit-and-tuskeegee-university-1020
-https://www.facebook.com/sharer/sharer.php?u=http://web.mit.edu/spotlight/sustainability-start
-https://news.mit.edu/2023/an-enduring-bond-mit-and-tuskeegee-university-1020
-http://news.mit.edu/2023/wobbly-gel-mat-trains-muscle-cells-work-together-1020
-http://news.mit.edu/2023/wobbly-gel-mat-trains-muscle-cells-work-together-1020
-http://news.mit.edu/news-clip/wbur-307
-http://news.mit.edu/news-clip/wbur-307
-http://news.mit.edu/2023/teaching-students-about-photonics-spark-foundation-1020
-http://news.mit.edu/2023/teaching-students-about-photonics-spark-foundation-1020
-http://news.mit.edu/2023/soft-optical-fibers-nerve-related-pain-1019
-http://news.mit.edu/2023/soft-optical-fibers-nerve-related-pain-1019
-https://www.wgbh.org/news/local/2023-10-18/cancer-survivors-prepare-to-take-on-head-of-the-charles-regatta
-https://www.wgbh.org/news/local/2023-10-18/cancer-survivors-prepare-to-take-on-head-of-the-charles-regatta
-https://news.mit.edu/
-https://www.google.com/maps/place/Massachusetts+Institute+of+Technology/@42.360091,-71.09416,15z/data=!4m5!3m4!1s0x0:0xd0e08ea5b308203c!8m2!3d42.360091!4d-71.09416
-https://calendar.mit.edu/
-https://twitter.com/mit
-https://www.facebook.com/MITnews
-https://www.youtube.com/mit
-https://careers.mit.edu/
-https://www.instagram.com/mit/
-http://web.mit.edu
-https://www.iana.org/domains/example
-http://web.mit.edu/education
-http://web.mit.edu/research
-http://web.mit.edu/innovation
-http://web.mit.edu/admissions-aid
-http://web.mit.edu/alumni
-http://web.mit.edu/campus-life
-http://web.mit.edu/search/
-http://web.mit.edu/about
-http://web.mit.edu/feedback
-http://web.mit.edu/mit-daily-weekly/
-http://web.mit.edu/mit-daily-weekly/
-http://web.mit.edu/subscribe/
-https://www.npr.org/podcasts/381444261/pri-living-on-earth
-https://www.bloomberg.com/news/articles/2023-10-19/how-the-science-of-disease-infection-can-make-cities-stronger
-https://www.npr.org/2023/10/19/1207156597/new-pentagon-report-claims-china-now-has-over-500-operational-nuclear-warheads
-https://tribalbusinessnews.com/sections/entrepreneurism/14484-mit-solve-announces-2023-indigenous-communities-fellowship-cohort
-https://techcrunch.com/2023/10/21/this-week-in-ai-can-we-trust-deepmind-to-be-ethical/?guccounter=1
-https://www.wgbh.org/news/local/2023-10-18/cancer-survivors-prepare-to-take-on-head-of-the-charles-regatta
-https://www.wbur.org/radioboston/2023/10/16/arlington-film-festival-arthur-musah-brief-tender-light
-https://www.cbsnews.com/boston/news/head-of-the-charles-breast-cancer-survivors/
-https://www.youtube.com/mit
-http://comms.mit.edu
-http://web.mit.edu/mit-daily-weekly/
-http://web.mit.edu
-http://web.mit.edu/education
-http://web.mit.edu/research
-http://web.mit.edu/innovation
-http://web.mit.edu/admissions-aid
-http://web.mit.edu/campus-life
-http://web.mit.edu/alumni
+https://mario.fandom.com/wiki/Mario
+https://www.gameinformer.com
+https://www.neogaf.com/threads/marvel-spider-man-2-review-thread.1662367/
+https://www.reddit.com/r/Games/top/?t=month
+http://twitter.com/GameInformer, None, United States, 104.244.42.193
+https://www.twitch.tv/gameinformer, None, United States, 199.232.46.167
+http://facebook.com/officialgameinformer, None, United States, 157.240.13.35
+https://www.instagram.com/gameinformermagazine/, None, France, 163.70.141.174
+http://www.youtube.com/gameinformer, None, United States, 142.251.175.190
+https://www.tiktok.com/@game_informer, None, United States, 23.59.80.169
+http://twitch.tv/gameinformer, None, United States, 151.101.130.167
+https://mario.fandom.com/wiki/Special:AllPages, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/MarioWiki, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Super_Mario_Odyssey, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Special:AllMaps, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Category:Games, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Special:Community, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Category:Locations_in_Super_Mario_Odyssey, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Category:Bosses_in_Super_Mario_Odyssey, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Category:Characters_in_Super_Mario_Odyssey, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Category:Enemies_in_Super_Mario_Odyssey, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Category:Paper_Mario, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Paper_Mario_(series), None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Category:Super_Paper_Mario, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Category:Mario_Party_series, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Mario_Party_2, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Category:Paper_Mario:_Sticker_Star, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Mario_Party_3, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Mario_Party, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Mario_Party_4, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Mario_Party_6, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Mario_Party_7, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Mario_Party_5, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Super_Mario_Kart, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Mario_Kart_(series), None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Mario_Kart_64, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Mario_Kart:_Super_Circuit, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Mario_Kart_DS, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Mario_Kart:_Double_Dash!!, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Mario_Kart_7, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Mario_Kart_Wii, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Mario_Kart_Arcade_GP_DX, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/WarioWare,_Inc.:_Minigame_Mania, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/WarioWare_(series), None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/WarioWare:_D.I.Y., None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/WarioWare,_Inc.:_Mega_Party_Game$!, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/WarioWare:_Smooth_Moves, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Category:Characters, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Category:Enemies, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Category:Bosses, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Game_%26_Wario, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Category:Characters_by_game, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Category:Characters_by_type, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Category:Geography, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Category:Locations, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Category:Worlds, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Category:Levels, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Category:Items, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Blog:Recent_posts, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Super_Mario_Bros., None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/MarioWiki:Policy, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Special:Random/Portal, None, United States, 199.232.212.194
+https://www.fandom.com/, None, United States, 199.232.212.194
+https://fandom.com/fancentral/home, None, United States, 199.232.212.194
+https://www.fandom.com/topics/games, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Special:RecentChanges, None, United States, 199.232.208.194
+https://www.fandom.com/topics/movies, None, United States, 199.232.212.194
+https://www.fandom.com/video, None, United States, 199.232.208.194
+https://www.fandom.com/topics/tv, None, United States, 199.232.212.194
+https://www.fandom.com/topics/anime, None, United States, 199.232.208.194
+https://www.fandom.com/explore, None, United States, 199.232.212.194
+https://auth.fandom.com/register?source=mw&redirect=https%3A%2F%2Fmario.fandom.com%2Fwiki%2FMario, None, United States, 199.232.208.194
+https://auth.fandom.com/signin?source=mw&redirect=https%3A%2F%2Fmario.fandom.com%2Fwiki%2FMario, None, United States, 199.232.212.194
+https://mario.fandom.com/da/wiki/Mario, None, United States, 199.232.212.194
+https://mario.fandom.com/de/wiki/Mario, None, United States, 199.232.208.194
+https://mario.fandom.com/es/wiki/Mario, None, United States, 199.232.208.194
+https://mario.fandom.com/fi/wiki/Mario, None, United States, 199.232.212.194
+https://mario.fandom.com/fr/wiki/Mario, None, United States, 199.232.208.194
+https://mario.fandom.com/hr/wiki/Mario, None, United States, 199.232.212.194
+https://mario.fandom.com/it/wiki/Mario, None, United States, 199.232.208.194
+https://mario.fandom.com/ja/wiki/%E3%83%9E%E3%83%AA%E3%82%AA, None, United States, 199.232.208.194
+https://mario.fandom.com/nl/wiki/Mario, None, United States, 199.232.208.194
+https://mario.fandom.com/no/wiki/Mario, None, United States, 199.232.212.194
+https://mario.fandom.com/pl/wiki/Mario, None, United States, 199.232.212.194
+https://mario.fandom.com/pt/wiki/Mario, None, United States, 199.232.208.194
+https://mario.fandom.com/ru/wiki/%D0%9C%D0%B0%D1%80%D0%B8%D0%BE, None, United States, 199.232.208.194
+http://en.wikipedia.org/wiki/North_America, None, United States, 103.102.166.224
+https://static.wikia.nocookie.net/mario/images/0/0d/SMBW_Mario_Jump.png/revision/latest?cb=20230926040307, None, United States, 199.232.212.194
+http://en.wikipedia.org/wiki/English, None, United States, 103.102.166.224
+https://mario.fandom.com/wiki/File:SM64_Mario_It%27s-a_me_Mario.oga, None, United States, 199.232.208.194
+http://en.wikipedia.org/wiki/Help:Installing_Japanese_character_sets, None, United States, 103.102.166.224
+https://static.wikia.nocookie.net/mario/images/b/bf/BJJ_Wendy_O_Koopa_and_Captains.png/revision/latest?cb=20200509054810, None, United States, 199.232.208.194
+https://popeye.fandom.com/wiki/Popeye, None, United States, 199.232.212.194
+https://mario.fandom.com/zh/wiki/%E9%A9%AC%E9%87%8C%E5%A5%A5, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/b/b5/MarioInDKArtwork.png/revision/latest?cb=20140203014959, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/c/cc/SM64_Mario_Swings_Bowser.png/revision/latest?cb=20230627024634, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/6/65/Mario_Bros._Shellcreepers.jpg/revision/latest?cb=20190512233420, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/2/2a/Mario%27s_Hair.png/revision/latest?cb=20151216012436, None, United States, 199.232.208.194
+http://en.wikipedia.org/wiki/Wikipedia:Citation_needed, None, United States, 103.102.166.224
+https://static.wikia.nocookie.net/mario/images/6/6e/Super_Mario_Bros._Deluxe.jpg/revision/latest?cb=20230430012936, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/0/0b/YNI_Stork.png/revision/latest?cb=20200818143614, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/3/3a/SMB3_Artwork_-_Airship_assault.jpg/revision/latest?cb=20190506122655, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/4/4e/SMW_Mario_Toadstool.png/revision/latest?cb=20190426015925, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/4/49/SML_Sarasaland_Artwork.png/revision/latest?cb=20230420002520, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/2/29/SMB2_Artwork_-_Group_artwork.png/revision/latest?cb=20190506122506, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/f/ff/SM64_Mario_Peach.png/revision/latest?cb=20190426015232, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/5/5d/SMS_Artwork_-_Group_artwork.jpg/revision/latest?cb=20190506122718, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/1/10/Mario_in_the_Wedding_Hall.png/revision/latest?cb=20200707021529, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Template:Data-table/Mario/Mario_Kart_series?action=edit, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/a/aa/MK8_Mario_emblem.png/revision/latest?cb=20190119042101, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/2/24/MKT_Mario_icon.png/revision/latest?cb=20191203143451, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/8/80/MKT_Mario.png/revision/latest?cb=20191203135120, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/e/e1/MKT_Fire_Flower.png/revision/latest?cb=20191204083647, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/4/40/SM3DW_Screenshot_-_Mushroom_Kingdom_and_Bowser.png/revision/latest?cb=20190505062514, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/1/17/Mario_SMG-2.jpg/revision/latest?cb=20160110221242, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/8/84/MKT_Mario_%28Hakama%29.png/revision/latest?cb=20200525135751, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/e/e4/MKT_Coin_Box.png/revision/latest?cb=20191204122019, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/b/bd/MKT_Mario_%28Santa%29.png/revision/latest?cb=20200528170228, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/4/47/MKT_Mario_%28Happi%29.png/revision/latest?cb=20200529100929, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/4/48/MKT_Bob-omb_Cannon.png/revision/latest?cb=20200529100711, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/9/9e/MKT_Triple_Mushrooms.png/revision/latest?cb=20201129051747, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/1/19/MKT_Mario_%28Classic%29.png/revision/latest?cb=20201129051316, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/c/c7/MKT_Mario_%28Musician%29.png/revision/latest?cb=20200525124437, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/4/4f/MKT_Double_Bob-ombs.png/revision/latest?cb=20200525124338, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Template:MKTcharacter/Mario_(Aviator)?action=edit, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/2/20/MKT_Mario_%28Aviator%29.png/revision/latest?cb=20220226051414, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Template:Data-table/Mario/Mario_Party_series?action=edit, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/d/d0/MKT_Dash_Ring.png/revision/latest?cb=20220226053253, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/8/85/Mario1.PNG/revision/latest?cb=20141128005428, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/a/a2/MP5_Mario_mugshot.png/revision/latest?cb=20230510093846, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/d/d7/MP4_Mario_room.png/revision/latest?cb=20200802061211, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Template:Data-table/Mario/Mario_Baseball_series?action=edit, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/0/04/MP4_Mario_constellation.png/revision/latest?cb=20200802061203, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/a/a4/MSB_Mario_mugshot.png/revision/latest?cb=20220226081252, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Template:MSB_captain/Mario?action=edit, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Template:Data-table/Mario/Super_Smash_Bros._series?action=edit, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/4/44/Mario_SSBU.png/revision/latest?cb=20180811045554, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/d/db/Mario_SSBU_3.png/revision/latest?cb=20200817152036, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/6/6d/Mario_SSBU_2.png/revision/latest?cb=20200817151939, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/6/64/Mario_SSBU_5.png/revision/latest?cb=20200817152217, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/1/13/Mario_SSBU_4.png/revision/latest?cb=20200817152102, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/c/cb/MarioSymbol.png/revision/latest?cb=20170904223710, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/5/5d/Mario_SSBU_6.png/revision/latest?cb=20200817152247, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Template:Data-table/Mario_%2B_Rabbids_series?action=edit, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/6/6a/MRKB_Mario_icon.png/revision/latest?cb=20200913155142, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/9/98/MRKB_Dash.png/revision/latest?cb=20200914084833, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/4/48/MRKB_Stomp_Jump.png/revision/latest?cb=20200914084831, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/2/2e/MRKB_Blaster.png/revision/latest?cb=20200913224723, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/4/49/MRKB_Melee.png/revision/latest?cb=20200913224904, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/0/08/MRKB_Hero_Sight.png/revision/latest?cb=20200913224941, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/3/30/MRKB_M-Power.png/revision/latest?cb=20200913225028, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Template:Flavor_text/Mario?action=edit, None, United States, 199.232.208.194
+https://mario.fandom.com/wiki/Mario?action=edit, None, United States, 199.232.212.194
+https://mario.fandom.com/wiki/Template:Timeline/Mario?action=edit, None, United States, 199.232.208.194
+https://nintendo.fandom.com/wiki/Tetris_(NES), None, United States, 199.232.212.194
+https://nintendo.fandom.com/wiki/Qix, None, United States, 199.232.212.194
+https://nintendo.fandom.com/wiki/F-1_Race, None, United States, 199.232.212.194
+http://en.wikipedia.org/wiki/Tetris_DS, None, United States, 103.102.166.224
+http://en.wikipedia.org/wiki/Dr._Mario_Express, None, United States, 103.102.166.224
+http://en.wikipedia.org/wiki/Dr._Mario_Online_Rx, 
+http://en.wikipedia.org/wiki/Game_%26_Watch_Collection, 
+http://en.wikipedia.org/wiki/Game_%26_Watch_Collection_2, None, United States, 103.102.166.224
+http://en.wikipedia.org/wiki/NES_Remix, None, United States, 103.102.166.224
+http://en.wikipedia.org/wiki/NES_Remix_2, None, United States, 103.102.166.224
+https://static.wikia.nocookie.net/mario/images/9/9c/Mario_-_Mario_Party_10.png/revision/latest?cb=20210214172737, None, United States, 199.232.208.194
+http://en.wikipedia.org/wiki/Ultimate_NES_Remix, None, United States, 103.102.166.224
+https://popeye.fandom.com/wiki/, None, United States, 199.232.208.194
+http://en.wikipedia.org/wiki/T%C5%8Dru_Furuya, None, United States, 103.102.166.224
+http://en.wikipedia.org/wiki/Takeshi_Aono, None, United States, 103.102.166.224
+https://static.wikia.nocookie.net/mario/images/3/3f/Mario_SSBU_8.png/revision/latest?cb=20200817154807, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/0/0f/DQpFQKzVAAA8rWL.jpg/revision/latest?cb=20210107011240, None, United States, 199.232.212.194
+https://static.wikia.nocookie.net/mario/images/4/44/Mario_SSBU_7.png/revision/latest?cb=20200817154523, None, United States, 199.232.208.194
+https://static.wikia.nocookie.net/mario/images/0/05/DK_Mario_Commercial.png/revision/latest?cb=20230428192734, None, United States, 199.232.212.194
+http://en.wikipedia.org/wiki/Wreck-It_Ralph, None, United States, 103.102.166.224
+https://static.wikia.nocookie.net/mario/images/b/bb/GWR_2018_Charles_Martinet.jpg/revision/latest?cb=20190711154852, None, United States, 199.232.212.194
+http://en.wikipedia.org/wiki/Ralph_Breaks_the_Internet, None, United States, 103.102.166.224
+https://static.wikia.nocookie.net/mario/images/3/36/Hat_mario.png/revision/latest?cb=20141109221407, None, United States, 199.232.212.194
+http://www.nintendolife.com/news/2009/11/mario_was_almost_called_mr_video, None, United States, 172.67.69.5
+https://www.ndw.jp/mario-interview-230425/2/, None, Japan, 164.46.39.1
+https://nintendoeverything.com/miyamoto-explains-why-mario-is-italian/, None, United States, 104.21.36.104
+https://www.nintendo.co.jp/character/mario/characters/index.html, None, United States, 23.210.101.76
+https://www.resetera.com/threads/so-apparently-in-1993-nintendo-confirmed-that-mario-isnt-human-but-rather-homo-nintendonus.154095, None, United States, 104.26.0.130
+https://www.independent.co.uk/life-style/gadgets-and-tech/gaming/mario-super-age-24-25-nintendo-shigeru-miyamoto-game-character-a7338911.html, None, United States, 199.232.45.91
+https://static.wikia.nocookie.net/mario/images/2/29/Google_Maps_Mario_screenshot.png/revision/latest?cb=20200929050956, None, United States, 199.232.212.194
+https://www.youtube.com/watch?v=FrM0gXWxfQo, None, United States, 74.125.68.136
+http://edition.cnn.com/2007/WORLD/asiapcf/02/14/miyamoto.script/index.html, None, United States, 151.101.195.5
+https://www.gameinformer.com/b/features/archive/2012/09/24/miyamoto-tezuka-interview.aspx, None, United States, 23.185.0.2
+https://twitter.com/NintendoAmerica/status/1693624002982314108, None, United States, 104.244.42.65
+https://blog.google/products/maps/putting-mario-map/, New York, United States, 216.239.38.21
+https://www.gamedesigning.org/gaming/characters/, None, United States, 104.26.15.26
+https://www.youtube.com/watch?v=wWjxOEPuqOc, None, United States, 64.233.170.190
+https://twitter.com/CharlesMartinet/status/1073644309755412480?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1073644309755412480&ref_url=https%3A%2F%2Fwww.geek.com%2Fgames%2Fcharles-martinet-holds-guinness-world-record-for-voicing-mario-1766254%2F, None, United States, 104.244.42.129
+https://www.empireonline.com/movies/features/50-greatest-video-game-characters/, Seattle, United States, 52.222.144.110
+https://twitter.com/MarioBrothBlog/status/1529442626319040514, None, United States, 104.244.42.65
+https://twitter.com/CharlesMartinet/status/1122713913269710848, None, United States, 104.244.42.193
+http://en.wikipedia.org/wiki/Mario, None, United States, 103.102.166.224
+https://www.gamespot.com/reviews/mario-rabbids-sparks-of-hope-review-this-sparks-joy/1900-6417985/?utm_source=cnp&utm_medium=fandom.com&utm_campaign=q2_2023_gamespot_reviews_experiment, None, United States, 199.232.44.194
+http://www.screenrant.com/wreck-it-ralph-2-sequel-mario/, Ashburn, United States, 34.202.200.131
+http://mario.nintendo.com/, None, United States, 3.160.196.95
+https://www.gamespot.com/reviews/mario-golf-super-rush-review-leisurely-chaos/1900-6417691/?utm_source=cnp&utm_medium=fandom.com&utm_campaign=q2_2023_gamespot_reviews_experiment, None, United States, 199.232.44.194
+https://www.fanatical.com/, None, United States, 104.22.46.146
+https://www.fandom.com/licensing, None, United States, 199.232.212.194
+https://www.fandom.com/fancentral/sci-fi, None, United States, 199.232.208.194
+https://www.muthead.com/, None, United States, 199.232.44.194
+https://www.facebook.com/getfandom, None, United States, 157.240.13.35
+https://twitter.com/getfandom, None, United States, 104.244.42.1
+https://www.youtube.com/fandomentertainment, None, United States, 74.125.68.190
+https://www.instagram.com/getfandom/, None, United States, 157.240.13.174
+https://www.fandom.com/what-is-fandom, None, United States, 199.232.212.194
+https://www.fandom.com/about#contact, None, United States, 199.232.208.194
+https://www.fandom.com/about, None, United States, 199.232.212.194
+https://www.fandom.com/careers, None, United States, 199.232.208.194
+https://www.fandom.com/press, None, United States, 199.232.212.194
+https://www.fandom.com/privacy-policy, None, United States, 199.232.208.194
+https://www.fandom.com/terms-of-use, None, United States, 199.232.212.194
+https://www.fandom.com/do-not-sell-my-info, None, United States, 199.232.208.194
+https://play.google.com/store/apps/details?id=com.fandom.app&referrer=utm_source%3Dwikia%26utm_medium%3Dglobalfooter, None, United States, 172.253.118.139
+https://apps.apple.com/us/app/fandom-videos-news-reviews/id1230063803, None, United States, 23.205.208.25
+https://about.fandom.com/mediakit#contact, None, United States, 199.232.208.194
+https://about.fandom.com/mediakit, None, United States, 199.232.212.194
+http://twitter.com/GameInformer, None, United States, 104.244.42.129
+https://bit.ly/FandomIG, None, United States, 67.199.248.11
+https://bit.ly/TikTokFandom, None, United States, 67.199.248.11
