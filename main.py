@@ -2,14 +2,12 @@ import requests
 import json
 import http
 import socket
-import queue
-import threading
 import multiprocessing
 from bs4 import BeautifulSoup
 import time
 from urllib.parse import urlparse
 
-output_file = 'urls.txt'
+textfile_db = 'urls.txt'
 lock = multiprocessing.Lock()
 
 # Ensures most updated adblock list
@@ -31,44 +29,45 @@ def continue_crawl(url):
         domain = domain.replace("www.","")
         #print(domain)
         if domain not in adblocker: # Checks domain if its an adblocker
-            print("Continue crawling!")
+            #print("Continue crawling!")
             exclusion.add(url)
             #print(exclusion)
             return True
-    print("Don't crawl")
+    #print("Don't crawl")
     return False
 
 
 # Function to send a request and process URLs in the response
 def process_url(url, url_queue):
     try:
+        time.sleep(1)
         response = requests.get(url)
         if response.status_code == 200:
             # Process the response and extract URLs
             page_content = response.text
             
+            visited_set.append(url)
+
             # Extract URLs from the page content
             new_urls = extract_urls_from_page(page_content)
             # Append the newly discovered URLs back to the queue
-            with lock:
-                for new_url in new_urls:
-                    if continue_crawl(new_url):
-                        url_queue.put(new_url)
-                    else:
-                        continue
+            for new_url in new_urls:
+                if continue_crawl(new_url):
+                    url_queue.put(new_url)
+                else:
+                    continue
                         
             url_geolocation = f"{url}, {request(url)}"
             # Write the processed URL to the output file
-            with open(output_file, 'a') as f:
-                f.write(f"{url_geolocation}\n")
+            if url not in init_url:
+                with open(textfile_db, 'a') as f:
+                    f.write(f"{url_geolocation}\n")
 
             # Process the response as needed
             print(f"Processed URL: {url_geolocation}")
             print(f"{multiprocessing.current_process().name}")
             #print(page_content)
-        else:
-            #print(f"Failed to fetch URL: {url} (Status Code: {response.status_code})")
-            print("")
+
     except Exception as e:
         #print(f"Error processing URL: {url} - {str(e)}")
         print("")
@@ -90,7 +89,9 @@ def extract_urls_from_page(page_content):
 def worker(url_queue):
     while not url_queue.empty():
         url = url_queue.get()
-        process_url(url, url_queue)
+        if url not in visited_set:
+            process_url(url, url_queue)
+        
 
 # Reverse IP request
 # Takes in an URL or address.
@@ -126,6 +127,17 @@ def beautify(dic):
     ipv4 = dic.get("IPv4", "Unknown IP")
     return f"{city}, {country}, {ipv4}"
 
+def parse_urls_to_queue(queue):
+    try:
+        with open(textfile_db, 'r') as file:
+            for line in file:
+                url = line.strip()  # Remove leading/trailing whitespaces
+                if url:
+                    queue.put(url)
+                    init_url.append(url)
+    except FileNotFoundError:
+        print(f"File not found: {textfile_db}")
+
 if __name__ == '__main__':
     # Stores the adblock as a set
     url = "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/hosts.txt" # You can choose the adblock filter in txt format
@@ -134,20 +146,27 @@ if __name__ == '__main__':
     global exclusion
     exclusion=set() # I think this should be a global var so muli threading crawler can read?
 
-    
+    # Create a queue for URLs
     manager = multiprocessing.Manager()
     url_queue = manager.Queue()
-    # Create a queue for URLs
-    #url_queue = queue.Queue()
+    global visited_set
+    global init_url
+    visited_set = manager.list()
+    init_url = manager.list()
 
+    # Call the function to parse URLs and put them into the queue
+    parse_urls_to_queue(url_queue)
+
+    '''
     # Start with an initial URL
     initial_url = 'https://example.com'
     url_queue.put(initial_url)
     url_queue.put('https://mit.edu')
     #url_queue.put('https://www.mit.edu')
+    '''
 
     # Number of worker processes
-    num_processes = 3
+    num_processes = 4
 
     # Create and start worker processes
     processes = []
