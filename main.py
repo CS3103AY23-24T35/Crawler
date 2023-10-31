@@ -48,7 +48,7 @@ def process_url(url, url_queue):
         if response.status_code == 200:
             # Process the response and extract URLs
             page_content = response.text
-            
+            #print(page_content)
             visited_set.append(url)
 
             # Extract URLs from the page content
@@ -69,7 +69,7 @@ def process_url(url, url_queue):
             # Process the response as needed
             print(f"Processed URL: {url_geolocation}")
             print(f"{multiprocessing.current_process().name}")
-            #print(page_content)
+
 
     except Exception as e:
         #print(f"Error processing URL: {url} - {str(e)}")
