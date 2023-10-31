@@ -43,7 +43,7 @@ def process_url(url, url_queue):
     try:
         time.sleep(1)
         start = time.perf_counter()
-        response = requests.get(url)
+        response = requests.get(url, timeout=3)
         request_time = time.perf_counter() - start
         if response.status_code == 200:
             # Process the response and extract URLs
@@ -54,6 +54,7 @@ def process_url(url, url_queue):
             # Extract URLs from the page content
             new_urls = extract_urls_from_page(page_content)
             # Append the newly discovered URLs back to the queue
+
             for new_url in new_urls:
                 if continue_crawl(new_url):
                     url_queue.put(new_url)
@@ -67,10 +68,10 @@ def process_url(url, url_queue):
                     f.write(f"{url_geolocation}\n")
 
             # Process the response as needed
-            print(f"Processed URL: {url_geolocation}")
-            print(f"{multiprocessing.current_process().name}")
+            print(f"{multiprocessing.current_process().name} Processed URL: {url_geolocation}")
 
-
+    except requests.exceptions.Timeout:
+        print(f"Request timed out. Dropping the response. URL={url}")
     except Exception as e:
         #print(f"Error processing URL: {url} - {str(e)}")
         print("")
@@ -177,6 +178,7 @@ if __name__ == '__main__':
         process = multiprocessing.Process(target=worker, args=(url_queue,))
         processes.append(process)
         process.start()
+        time.sleep(1)
 
     # Wait for all worker processes to finish
     for process in processes:
