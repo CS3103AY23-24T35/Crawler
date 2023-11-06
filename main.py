@@ -5,7 +5,11 @@ import socket
 import multiprocessing
 from bs4 import BeautifulSoup
 import time
+import matplotlib.pyplot as plt
 from urllib.parse import urlparse
+from collections import Counter
+from keywords import keyword_data
+import threading
 
 textfile_db = 'urls.txt'
 lock = multiprocessing.Lock()
@@ -50,10 +54,15 @@ def process_url(url, url_queue):
             page_content = response.text
             #print(page_content)
             visited_set.append(url)
-
             # Extract URLs from the page content
             new_urls = extract_urls_from_page(page_content)
             # Append the newly discovered URLs back to the queue
+
+            for category, keywords in keyword_data.items():
+                for keyword in keywords:
+                    count = page_content.lower().count(keyword.lower())
+                    shared_keyword_counts[category] += count
+                    
 
             for new_url in new_urls:
                 if continue_crawl(new_url):
@@ -91,7 +100,7 @@ def extract_urls_from_page(page_content):
     return new_urls
 
 def worker(url_queue):
-    while not url_queue.empty():
+    while not url_queue.empty() and not stop_event.is_set():
         url = url_queue.get()
         if url not in visited_set:
             process_url(url, url_queue)
@@ -142,6 +151,24 @@ def parse_urls_to_queue(queue):
     except FileNotFoundError:
         print(f"File not found: {textfile_db}")
 
+def print_result():
+    #keywords, counts = zip(*keyword_counts.most_common())
+    #print(keyword_counts.keys())
+    print(shared_keyword_counts)
+    keywords = shared_keyword_counts.keys()
+    counts = shared_keyword_counts.values()
+    plt.bar(keywords, counts)
+    plt.xlabel("Keywords")
+    plt.ylabel("Occurrences")
+    plt.title("IOT Devices Security Trends")
+    plt.xticks(rotation=45)
+    plt.savefig("keywords_trends.png")
+    plt.show()
+
+def stop_processes_after_time():
+    time.sleep(5400)  # Stop the processes after 10 seconds
+    stop_event.set()  # Set the stop event to signal the workers to stop
+
 if __name__ == '__main__':
     # Stores the adblock as a set
     url = "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/hosts.txt" # You can choose the adblock filter in txt format
@@ -155,19 +182,18 @@ if __name__ == '__main__':
     url_queue = manager.Queue()
     global visited_set
     global init_url
+    global keyword_counts
+    global shared_keyword_counts
     visited_set = manager.list()
     init_url = manager.list()
+    stop_event = manager.Event()
+    keyword_counts = Counter()
+
+    shared_keyword_counts = manager.dict({category: 0 for category in keyword_data})
+
 
     # Call the function to parse URLs and put them into the queue
     parse_urls_to_queue(url_queue)
-
-    '''
-    # Start with an initial URL
-    initial_url = 'https://example.com'
-    url_queue.put(initial_url)
-    url_queue.put('https://mit.edu')
-    #url_queue.put('https://www.mit.edu')
-    '''
 
     # Number of worker processes
     num_processes = 4
@@ -180,8 +206,14 @@ if __name__ == '__main__':
         process.start()
         time.sleep(1)
 
+    timer_thread = threading.Thread(target=stop_processes_after_time)
+    timer_thread.start()
+    timer_thread.join()
+
     # Wait for all worker processes to finish
     for process in processes:
         process.join()
 
     print("All URLs processed.")
+
+    print_result()
