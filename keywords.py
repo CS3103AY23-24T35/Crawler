@@ -13,7 +13,7 @@ keyword_data = {
     "Smart Door Locks": ["Yale Assure Lever", "Schlage Connect", "Kwikset Halo",  "Smart Door Lock"],
     "Smart Blinds, Shades": ["Serena, Lutron", "Axis Gear", "Bali Blind", "Smart Blind"],
     "Smart Smoke Detectors": ["Nest Protect", "First Alert Onelink", "Kidde RemoteLync", "Smart Smoke Detector"],
-    "Smart Sprinkler Systems": ["Rachio 3", "Orbit B-hyve", "RainMachine, “Smart Sprinkler”],
+    "Smart Sprinkler Systems": ["Rachio 3", "Orbit B-hyve", "RainMachine", "Smart Sprinkler"],
     "Smart Health Devices": ["Fitbit", "Apple Watch", "Withings Body+ Scale", "Smart Scale", "Fitness Tracker", "Smart Watch"],
     "Smart Vacuum Cleaners": ["iRobot Roomba", "Eufy RoboVac", "Shark IQ Robot", "Smart Vacuum", "Vacuum Robot"],
     "Smart Kitchen Appliances": ["Instant Pot Smart WiFi", "Behmor Connected Coffee Maker", "Anova Precision Cooker", "Smart Kitchen"],
