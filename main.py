@@ -11,11 +11,15 @@ from collections import Counter
 from keywords import keyword_data
 import threading
 
+ANALYSE_FLAG = 1 #Flag to enable analysis
 textfile_db = 'urls.txt'
 lock = multiprocessing.Lock()
 
-# Ensures most updated adblock list
+
 def initialise_adblock(url, save_path):
+    '''
+    Function to initialise the list of adblocks and saves it to exclude.txt
+    '''
     response = requests.get(url)
     if response.status_code == 200:
         with open(save_path, 'wb') as file:
@@ -27,7 +31,9 @@ def initialise_adblock(url, save_path):
         print(f"Error: Unable to download adblock list from {url}")
 
 def continue_crawl(url):
-    # Check if the URL is in the exclusion list (ad block list)
+    '''
+    Function to check if the URL is in the exclusion list (ad block list)
+    '''
     if url not in exclusion: # Checks if been to the site before
         exclusion.add(url)
         domain=urlparse(url).netloc
@@ -42,8 +48,11 @@ def continue_crawl(url):
     return False
 
 
-# Function to send a request and process URLs in the response
 def process_url(url, url_queue):
+    '''
+    Function to send a request to the URL address.
+    Parse the response and calls other functions to store all new URLs found to the queue    
+    '''
     try:
         time.sleep(1)
         start = time.perf_counter()
@@ -58,10 +67,11 @@ def process_url(url, url_queue):
             new_urls = extract_urls_from_page(page_content)
             # Append the newly discovered URLs back to the queue
 
-            for category, keywords in keyword_data.items():
-                for keyword in keywords:
-                    count = page_content.lower().count(keyword.lower())
-                    shared_keyword_counts[category] += count
+            if ANALYSE_FLAG == 1:
+                for category, keywords in keyword_data.items():
+                    for keyword in keywords:
+                        count = page_content.lower().count(keyword.lower())
+                        shared_keyword_counts[category] += count
                     
 
             for new_url in new_urls:
@@ -85,8 +95,11 @@ def process_url(url, url_queue):
         #print(f"Error processing URL: {url} - {str(e)}")
         print("")
 
-# Function to extract URLs from the page content using BeautifulSoup
+
 def extract_urls_from_page(page_content):
+    '''
+    Function to extract URLs from the page content using BeautifulSoup
+    '''
     new_urls = []
     try:
         soup = BeautifulSoup(page_content, 'html.parser')
@@ -100,16 +113,19 @@ def extract_urls_from_page(page_content):
     return new_urls
 
 def worker(url_queue):
+    '''
+    Function to loop through the urls queue and assigns workers to the url for processing
+    Stops when queue is empty or the delay timer has been reached
+    '''
     while not url_queue.empty() and not stop_event.is_set():
         url = url_queue.get()
         if url not in visited_set:
             process_url(url, url_queue)
-        
-
-# Reverse IP request
-# Takes in an URL or address.
 
 def request(addr):
+    '''
+    Reverses IP request which takes in an URL or address.
+    '''
     if "http" in addr:
         host = addr.split("/")[2]
         ip_address = socket.gethostbyname(host)
@@ -131,16 +147,21 @@ def request(addr):
         ans = ""
     return ans
     
-# Helper function to beautify JSON response.
-# Takes in a dictionary as formatted via JSON, and outputs a string containing
-# the city of origin, country of origin, and IPv4 address.
 def beautify(dic):
+    '''
+    Helper function to beautify JSON response.
+    Takes in a dictionary as formatted via JSON, and outputs a string containing
+    the city of origin, country of origin, and IPv4 address.
+    '''
     city = dic.get("city", "Unknown City")
     country = dic.get("country_name", "Unknown Country")
     ipv4 = dic.get("IPv4", "Unknown IP")
     return f"{city}, {country}, {ipv4}"
 
 def parse_urls_to_queue(queue):
+    '''
+    Parse urls.txt for the initial urls to be added to the queue
+    '''
     try:
         with open(textfile_db, 'r') as file:
             for line in file:
@@ -152,9 +173,11 @@ def parse_urls_to_queue(queue):
         print(f"File not found: {textfile_db}")
 
 def print_result():
-    #keywords, counts = zip(*keyword_counts.most_common())
-    #print(keyword_counts.keys())
+    '''
+    Print all analysis results and plot a graph
+    '''
     print(shared_keyword_counts)
+    '''
     keywords = shared_keyword_counts.keys()
     counts = shared_keyword_counts.values()
     plt.bar(keywords, counts)
@@ -164,8 +187,25 @@ def print_result():
     plt.xticks(rotation=45)
     plt.savefig("keywords_trends.png")
     plt.show()
+    '''
+    sorted_keywords = sorted(shared_keyword_counts.items(), key=lambda x: x[1], reverse=True)
+    top_keywords = dict(sorted_keywords[:5])  # Get the top 5 keywords
+    
+    keywords = list(top_keywords.keys())
+    counts = list(top_keywords.values())
+
+    plt.bar(keywords, counts)
+    plt.xlabel("Keywords")
+    plt.ylabel("Occurrences")
+    plt.title("Top 5 IOT Devices Security Trends")
+    plt.xticks(rotation=45)
+    plt.savefig("top_keywords_trends_v2.png")
+    plt.show()
 
 def stop_processes_after_time():
+    '''
+    Function to stop all processes when the delay ends
+    '''
     time.sleep(5400)  # Stop the processes after 10 seconds
     stop_event.set()  # Set the stop event to signal the workers to stop
 
@@ -182,13 +222,12 @@ if __name__ == '__main__':
     url_queue = manager.Queue()
     global visited_set
     global init_url
-    global keyword_counts
     global shared_keyword_counts
     visited_set = manager.list()
     init_url = manager.list()
     stop_event = manager.Event()
-    keyword_counts = Counter()
 
+    #Shared dictionary to store counts of keywords per category
     shared_keyword_counts = manager.dict({category: 0 for category in keyword_data})
 
 
@@ -206,6 +245,7 @@ if __name__ == '__main__':
         process.start()
         time.sleep(1)
 
+    #Start a timer thread to signal end of processes
     timer_thread = threading.Thread(target=stop_processes_after_time)
     timer_thread.start()
     timer_thread.join()
@@ -216,5 +256,6 @@ if __name__ == '__main__':
 
     print("All URLs processed.")
 
-    #print analysis
-    print_result()
+    if ANALYSE_FLAG == 1:
+        #print analysis
+        print_result()
