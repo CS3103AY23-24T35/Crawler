@@ -205,7 +205,7 @@ def stop_processes_after_time():
     '''
     Function to stop all processes when the delay ends
     '''
-    time.sleep(5400)  # Stop the processes after 10 seconds
+    time.sleep(3600)  # Stop the processes after 10 seconds
     stop_event.set()  # Set the stop event to signal the workers to stop
 
 if __name__ == '__main__':
