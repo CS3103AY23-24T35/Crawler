@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 import time
 import matplotlib.pyplot as plt
 from urllib.parse import urlparse
-from collections import Counter
 from keywords import keyword_data
 import threading
 
