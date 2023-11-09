@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 from keywords import keyword_data
 import threading
 
-ANALYSE_FLAG = 1 #Flag to enable analysis
+ANALYSE_FLAG = 0 #Flag to enable analysis
 textfile_db = 'urls.txt'
 lock = multiprocessing.Lock()
 
@@ -205,7 +205,7 @@ def stop_processes_after_time():
     '''
     Function to stop all processes when the delay ends
     '''
-    time.sleep(3600)  # Stop the processes after 10 seconds
+    time.sleep(36)  # Stop the processes after X amount of seconds
     stop_event.set()  # Set the stop event to signal the workers to stop
 
 if __name__ == '__main__':
@@ -214,7 +214,7 @@ if __name__ == '__main__':
     save_path = "exclusion.txt"  # Replace with your desired file path
     adblocker = initialise_adblock(url,save_path)
     global exclusion
-    exclusion=set() # I think this should be a global var so muli threading crawler can read?
+    exclusion=set() # global var so multi process crawler can read
 
     # Create a queue for URLs
     manager = multiprocessing.Manager()
@@ -222,9 +222,9 @@ if __name__ == '__main__':
     global visited_set
     global init_url
     global shared_keyword_counts
-    visited_set = manager.list()
-    init_url = manager.list()
-    stop_event = manager.Event()
+    visited_set = manager.list() # Global list to store visited sites
+    init_url = manager.list() # list for initial urls
+    stop_event = manager.Event() # Event to stop all processes when timer ends
 
     #Shared dictionary to store counts of keywords per category
     shared_keyword_counts = manager.dict({category: 0 for category in keyword_data})

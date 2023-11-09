@@ -11,3 +11,6 @@ pip install -r requirements.txt
 python3 main.py
 ```
 <br/>
+
+Note: Analysis Flag is turned off by default. Change ANALYSIS_FLAG to 1 to enable anslysis.<br/>
+
